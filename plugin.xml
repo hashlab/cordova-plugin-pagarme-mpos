@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="br.com.hashlab.cordova-plugin-pagarme-mpos" version="1.0.0">
+  <name>Mpos</name>
+  <description>A Cordova plugin for interacting with Pagar.me's mPOS/pinpad payment interface.</description>
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.6.0" />
+  </engines>
+
+  <js-module src="www/mpos.js" name="Mpos">
+    <clobbers target="pagarme.Mpos" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Mpos">
+        <param name="ios-package" value="Mpos" />
+      </feature>
+    </config-file>
+	
+	<header-file src="src/ios/MposPlugin.h" />
+    <source-file src="src/ios/MposPlugin.m" />
+  </platform>
+</plugin>

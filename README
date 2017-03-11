@@ -1,0 +1,14 @@
+** cordova-plugin-pagarme-mpos **
+
+A plugin for interacting with Pagar.me's mPOS libraries in Cordova hybrid applications.
+
+PLATFORMS SUPPORTED
+* iOS
+
+INSTALLATION GUIDE
+
+1. Add Cordova plugin to project
+$ cordova plugin add cordova-plugin-pagarme-mpos
+
+2. In your Xcode project, add the following to Project Settings -> Build Settings -> Other Linker Flags:
+"-lstdc++ -stdlib=libstdc++"
