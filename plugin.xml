@@ -22,5 +22,16 @@
 	
 	<header-file src="src/ios/MposPlugin.h" />
     <source-file src="src/ios/MposPlugin.m" />
+
+    <header-file src="src/ios/include/mpos-ios.h" />
+    <header-file src="src/ios/include/libabecs/abecs.h" />
+    <header-file src="src/ios/include/libabecs/packet.h" />
+    <header-file src="src/ios/include/libmpos/mpos.h" />
+    <header-file src="src/ios/include/libtms/tms.h" />
+
+    <source-file src="src/ios/lib/libabecs.a" framework="true" />
+    <source-file src="src/ios/lib/libmpos.a" framework="true" />
+    <source-file src="src/ios/lib/libtms.a" framework="true" />
+	<source-file src="src/ios/lib/libmposios.a" framework="true" />
   </platform>
 </plugin>
