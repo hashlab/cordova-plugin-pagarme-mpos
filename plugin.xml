@@ -21,7 +21,7 @@
 		</config-file>
 
 		<header-file src="src/ios/MposPlugin.h" />
-		<source-file src="src/ios/MposPlugin.m" />
+		<source-file src="src/ios/MposPlugin.m" compiler-flags="-fno-objc-arc" />
 
 		<header-file src="src/ios/include/mpos-ios.h" />
 		<header-file src="src/ios/include/libabecs/abecs.h" />
