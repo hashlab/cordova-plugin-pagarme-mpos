@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="br.com.hashlab.cordova-plugin-pagarme-mpos" version="1.0.0">
-  <name>Mpos</name>
-  <description>A Cordova plugin for interacting with Pagar.me's mPOS/pinpad payment interface.</description>
-  <license>MIT</license>
+	<name>Mpos</name>
+	<description>A Cordova plugin for interacting with Pagar.me's mPOS/pinpad payment interface.</description>
+	<license>MIT</license>
 
-  <engines>
-    <engine name="cordova" version=">=3.6.0" />
-  </engines>
+	<engines>
+		<engine name="cordova" version=">=3.6.0" />
+	</engines>
 
-  <js-module src="www/mpos.js" name="Mpos">
-    <clobbers target="pagarme.Mpos" />
-  </js-module>
+	<js-module src="www/mpos.js" name="Mpos">
+		<clobbers target="pagarme.Mpos" />
+	</js-module>
 
-  <!-- ios -->
-  <platform name="ios">
-    <config-file target="config.xml" parent="/*">
-      <feature name="Mpos">
-        <param name="ios-package" value="Mpos" />
-      </feature>
-    </config-file>
-	
-	<header-file src="src/ios/MposPlugin.h" />
-    <source-file src="src/ios/MposPlugin.m" />
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="Mpos">
+				<param name="ios-package" value="Mpos" />
+			</feature>
+		</config-file>
 
-    <header-file src="src/ios/include/mpos-ios.h" />
-    <header-file src="src/ios/include/libabecs/abecs.h" />
-    <header-file src="src/ios/include/libabecs/packet.h" />
-    <header-file src="src/ios/include/libmpos/mpos.h" />
-    <header-file src="src/ios/include/libtms/tms.h" />
+		<header-file src="src/ios/MposPlugin.h" />
+		<source-file src="src/ios/MposPlugin.m" />
 
-    <source-file src="src/ios/lib/libabecs.a" framework="true" />
-    <source-file src="src/ios/lib/libmpos.a" framework="true" />
-    <source-file src="src/ios/lib/libtms.a" framework="true" />
-	<source-file src="src/ios/lib/libmposios.a" framework="true" />
-  </platform>
+		<header-file src="src/ios/include/mpos-ios.h" />
+		<header-file src="src/ios/include/libabecs/abecs.h" />
+		<header-file src="src/ios/include/libabecs/packet.h" />
+		<header-file src="src/ios/include/libmpos/mpos.h" />
+		<header-file src="src/ios/include/libtms/tms.h" />
+
+		<source-file src="src/ios/lib/libabecs.a" framework="true" />
+		<source-file src="src/ios/lib/libmpos.a" framework="true" />
+		<source-file src="src/ios/lib/libtms.a" framework="true" />
+		<source-file src="src/ios/lib/libmposios.a" framework="true" />
+	</platform>
 </plugin>
