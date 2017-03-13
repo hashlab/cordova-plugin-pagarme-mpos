@@ -1,4 +1,4 @@
-** cordova-plugin-pagarme-mpos **
+# cordova-plugin-pagarme-mpos
 
 A plugin for interacting with Pagar.me's mPOS libraries in Cordova hybrid applications.
 
