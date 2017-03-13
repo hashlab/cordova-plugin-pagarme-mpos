@@ -1,3 +1,11 @@
+/* Copyright (C) 2017 HashLab - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the MIT License.
+ *
+ * You should have received a copy of the MIT license in
+ * the COPYING file.
+ */
+
 #import "MposPlugin.h"
 #import "mpos-ios.h"
 

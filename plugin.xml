@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	 Copyright (C) 2017 HashLab - All Rights Reserved
+	 You may use, distribute and modify this code under the
+	 terms of the MIT License.
+	 
+	 You should have received a copy of the MIT license in
+	 the COPYING file.
+-->
+
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="br.com.hashlab.cordova-plugin-pagarme-mpos" version="1.0.0">
 	<name>Mpos</name>
 	<description>A Cordova plugin for interacting with Pagar.me's mPOS/pinpad payment interface.</description>

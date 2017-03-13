@@ -17,4 +17,5 @@ $ cordova plugin add cordova-plugin-pagarme-mpos
 4. Build & Run.
 
 ## LICENSE
-Licensing information may be found in LICENSE.
+This project is licensed under the MIT license.
+Licensing information may be found in COPYING.
