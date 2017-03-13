@@ -148,6 +148,14 @@
 	else {
 		applications = [NSMutableArray array];
 		for (NSDictionary *object in appParam) {
+			if (![object objectForKey:@"payment_method"] || ![[object objectForKey:@"payment_method"] isKindOfClass:[NSString class]]
+				|| ![object objectForKey:@"card_brand"] || ![[object objectForKey:@"card_brand"] isKindOfClass:[NSString class]]) {
+				
+				CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Invalid applications passed."];
+				[[self commandDelegate] sendPluginResult:result callbackId:[command callbackId]];
+				return;
+			}
+			
 			mpos_payment_method_t method = [[object objectForKey:@"payment_method"] isEqualToString:@"debit_card"] ? MPM_DEBIT : MPM_CREDIT;
 
 			PMEmvApplication *emvApplication = [PMEmvApplication applicationWithCardBrand:[object objectForKey:@"card_brand"] paymentMethod:method];
